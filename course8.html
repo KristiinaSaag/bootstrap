@@ -10,6 +10,7 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
       section {
         padding: 60px 0;
@@ -18,18 +19,12 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark pt-5 pb-4 bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark pt-5 pb-4 bg-danger">
       <div class="container-xxl">
         <!-- navbar brand / title -->
-        <a class="navbar-brand" href="#intro">
-          <img
-            src="assets/logo.png"
-            alt="Net Ninja Logo"
-            width="60"
-            height="60"
-            class="d-inline-block text-light"
-          />
-          Net Ninja Pro - the Book
+        <a class="navbar-brand fw-bold" href="#intro">
+          <img src="assets/book-logo.png" alt="logo" width="45" height="50" class="d-inline-block">
+            DON'T MAKE ME THINK
         </a>
         <!-- toggle button for mobile nav -->
         <button
@@ -74,7 +69,7 @@
               <a class="nav-link" href="#pricing">Pricing</a>
             </li>
             <li class="nav-item ms-2 d-none d-md-inline">
-              <a class="btn btn-secondary" href="#pricing">Buy Now</a>
+              <a class="btn btn-danger" href="#pricing">Buy Now</a>
             </li>
           </ul>
         </div>
@@ -86,32 +81,359 @@
         <div class="row g-4 justify-content-center align-items-center">
           <div class="col-md-5 text-center text-md-start">
             <h1>
-              <div class="display-2 fw-bold">Black-Belt</div>
-              <div class="display-6 text-muted fw-bold">Your Coding Skills</div>
+              <div class="display-2 fw-bold text-danger">Black-Belt</div>
+              <div class="display-6 text-muted fw-bold">Your UX/UI Skills</div>
             </h1>
             <p class="lead my-4 text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam, dignissimos?
+              Witty, commonsensical, and eminently practical, it's one of the best-loved and most recommended books on the subject.
             </p>
-            <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+            <a href="#pricing" class="btn btn-danger btn-lg">Buy Now</a>
           </div>
           <div class="col-md-5 text-center d-none d-md-block">
-            <img src="/assets/ebook-cover.png" class="img-fluid" alt="ebook" />
+            <img src="/assets/book-cover.jpg" class="img-fluid" alt="ebook" />
           </div>
         </div>
       </div>
     </section>
     <!-- pricing plans -->
+    <section id="pricing" class="bg-light mt-5">
+      <div class="container-lg">
+        <div class="text-center text-danger">
+          <h2>Pricing Plans</h2>
+          <p class="lead text-muted">Choose a pricing plan to suit you.</p>
+        </div>
 
+        <div class="row my-5 g-0 align-items-center justify-content-center">
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-0">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title text-danger">Starter Edition</h4>
+                <p class="lead card-subtitle">eBook download only</p>
+                <p class="display-5 my-4 text-danger fw-bold">$12.99</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Mollitia, vitae magni! Repellat commodi a fuga corporis saepe
+                  dolorum.
+                </p>
+                <a href="#" class="btn btn-outline-danger btn-lg mt-3">
+                  Buy Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-9 col-lg-4">
+            <div class="card border-danger border-2">
+              <div class="card-header text-center text-danger">
+                Most Popular
+              </div>
+              <div class="card-body text-center py-5">
+                <h4 class="card-title text-danger">Complete Edition</h4>
+                <p class="lead card-subtitle">eBook download & all updates</p>
+                <p class="display-4 my-4 text-danger fw-bold">$18.99</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Mollitia, vitae magni! Repellat commodi a fuga corporis saepe
+                  dolorum.
+                </p>
+                <a href="#" class="btn btn-outline-danger btn-lg mt-3">
+                  Buy Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-0">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title text-danger">Ultimate Edition</h4>
+                <p class="lead card-subtitle">download, updates & extras</p>
+                <p class="display-5 my-4 text-danger fw-bold">$24.99</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Mollitia, vitae magni! Repellat commodi a fuga corporis saepe
+                  dolorum.
+                </p>
+                <a href="#" class="btn btn-outline-danger btn-lg mt-3">
+                  Buy Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end container -->
+    </section>
     <!-- topics at a glance -->
-
+    <section id="topics">
+      <div class="container-md">
+        <div class="text-center text-danger">
+          <h2>Inside the Book...</h2>
+          <p class="lead text-muted">
+            A quick glance at the topics you'll learn
+          </p>
+        </div>
+        <div class="row my-5 g-3 justify-content-around align-items-center">
+          <div class="col-6 col-lg-4">
+            <img src="/assets/kindle-cover.jpg" class="img-fluid" alt="ebook" />
+          </div>
+          <div class="col-lg-6">
+            <!-- accordion -->
+            <div class="accordion" id="chapters">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-1">
+                  <button
+                    class="accordion-button text-danger bg-light fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-1"
+                    aria-expanded="true"
+                    aria-controls="chapter-1"
+                  >
+                    Chapter 1 - Don't make me think!
+                  </button>
+                </h2>
+                <div
+                  id="chapter-1"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="heading-1"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      For as long I can remember, I've been telling people that this is my first law of usability.
+                    </p>
+                    <p>
+                      It's the overriding principle—the ultimate tie breaker when deciding whether a design works or it doesn’t. If you have room in your head for only one usability rule, make this the one.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-2">
+                  <button
+                    class="accordion-button collapsed text-danger bg-light fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-2"
+                    aria-expanded="false"
+                    aria-controls="chapter-2"
+                  >
+                    Chapter 2 - How we really use the Web
+                  </button>
+                </h2>
+                <div
+                  id="chapter-2"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-2"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Quis assumenda delectus sapiente quidem consequatur odit
+                      adipisci necessitatibus nemo aliquid minus modi tempore
+                      quibusdam quas vitae, animi ipsam nulla sunt alias.
+                    </p>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Quis assumenda delectus sapiente quidem consequatur odit
+                      adipisci necessitatibus nemo aliquid minus modi tempore
+                      quibusdam quas vitae, animi ipsam nulla sunt alias.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-3">
+                  <button
+                    class="accordion-button collapsed text-danger bg-light fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-3"
+                    aria-expanded="false"
+                    aria-controls="chapter-1"
+                  >
+                    Chapter 3 - Billboard Design 101
+                  </button>
+                </h2>
+                <div
+                  id="chapter-3"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-3"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Quis assumenda delectus sapiente quidem consequatur odit
+                      adipisci necessitatibus nemo aliquid minus modi tempore
+                      quibusdam quas vitae, animi ipsam nulla sunt alias.
+                    </p>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Quis assumenda delectus sapiente quidem consequatur odit
+                      adipisci necessitatibus nemo aliquid minus modi tempore
+                      quibusdam quas vitae, animi ipsam nulla sunt alias.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-4">
+                  <button
+                    class="accordion-button collapsed text-danger bg-light fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-4"
+                    aria-expanded="false"
+                    aria-controls="chapter-4"
+                  >
+                    Chapter 4 -  Animal, Vegetable, or Mineral?
+                  </button>
+                </h2>
+                <div
+                  id="chapter-4"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-4"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Quis assumenda delectus sapiente quidem consequatur odit
+                      adipisci necessitatibus nemo aliquid minus modi tempore
+                      quibusdam quas vitae, animi ipsam nulla sunt alias.
+                    </p>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Quis assumenda delectus sapiente quidem consequatur odit
+                      adipisci necessitatibus nemo aliquid minus modi tempore
+                      quibusdam quas vitae, animi ipsam nulla sunt alias.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-5">
+                  <button
+                    class="accordion-button collapsed text-danger bg-light fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-5"
+                    aria-expanded="false"
+                    aria-controls="chapter-5"
+                  >
+                    Chapter 5 - Omit needless words
+                  </button>
+                </h2>
+                <div
+                  id="chapter-5"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-5"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Quis assumenda delectus sapiente quidem consequatur odit
+                      adipisci necessitatibus nemo aliquid minus modi tempore
+                      quibusdam quas vitae, animi ipsam nulla sunt alias.
+                    </p>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Quis assumenda delectus sapiente quidem consequatur odit
+                      adipisci necessitatibus nemo aliquid minus modi tempore
+                      quibusdam quas vitae, animi ipsam nulla sunt alias.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- reviews list -->
-
+    <section id="reviews" class="bg-danger">
+      <div class="container-lg">
+        <div class="text-center text-white">
+          <h2><i class="bi bi-stars"></i>Book Reviews</h2>
+          <p class="lead">What my students have said about the book...</p>
+        </div>
+  
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-8">
+            <div class="list-group">
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                </div>
+                <h5 class="mb-1 text-danger">A must-buy for every aspiring ux/ui designer</h5>
+                <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur error veniam sit expedita est illo maiores neque quos nesciunt, reprehenderit autem odio commodi labore praesentium voluptate repellat in id quisquam.</p>
+                <small>Review by Mario</small>
+              </div>
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                </div>
+                <h5 class="mb-1 text-danger">A must-buy for every aspiring ux/ui designer</h5>
+                <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur error veniam sit expedita est illo maiores neque quos nesciunt, reprehenderit autem odio commodi labore praesentium voluptate repellat in id quisquam.</p>
+                <small>Review by Mario</small>
+              </div>
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-half text-danger"></i>
+                </div>
+                <h5 class="mb-1 text-danger">A must-buy for every aspiring ux/ui designer</h5>
+                <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur error veniam sit expedita est illo maiores neque quos nesciunt, reprehenderit autem odio commodi labore praesentium voluptate repellat in id quisquam.</p>
+                <small>Review by Mario</small>
+              </div>
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                </div>
+                <h5 class="mb-1 text-danger">A must-buy for every aspiring ux/ui designer</h5>
+                <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur error veniam sit expedita est illo maiores neque quos nesciunt, reprehenderit autem odio commodi labore praesentium voluptate repellat in id quisquam.</p>
+                <small>Review by Mario</small>
+              </div>
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-half text-danger"></i>
+                </div>
+                <h5 class="mb-1 text-danger">A must-buy for every aspiring ux/ui designer</h5>
+                <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur error veniam sit expedita est illo maiores neque quos nesciunt, reprehenderit autem odio commodi labore praesentium voluptate repellat in id quisquam.</p>
+                <small>Review by Mario</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     <!-- contact form -->
 
     <!-- get updates / modal trigger -->
 
-    <a href="index.html" class="btn">Tagasi avalehele</a>
+    <a href="index.html" class="btn text-white float-end">Tagasi avalehele</a>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
