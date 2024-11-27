@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Net Ninja Pro - the Book 8</title>
+    <title>Don't Make Me Think - the book</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="/css/main.min.css" rel="stylesheet">
     <style>
       section {
         padding: 60px 0;
@@ -87,7 +88,10 @@
             <p class="lead my-4 text-muted">
               Witty, commonsensical, and eminently practical, it's one of the best-loved and most recommended books on the subject.
             </p>
-            <a href="#pricing" class="btn btn-danger btn-lg">Buy Now</a>
+            <a href="#pricing" class="btn btn-altdark btn-lg">Buy Now</a>
+            <a href="#sidebar" class="d-block mt-3 text-danger" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
+              Explore my other books
+            </a>
           </div>
           <div class="col-md-5 text-center d-none d-md-block">
             <span class="tt" data-bs-placement="bottom" title="Don't Make Me Think book cover">
@@ -360,7 +364,7 @@
     <section id="reviews" class="bg-danger">
       <div class="container-lg">
         <div class="text-center text-white">
-          <h2><i class="bi bi-stars"></i>Book Reviews</h2>
+          <h2><i class="bi bi-stars text-altlight"></i>Book Reviews</h2>
           <p class="lead">What my students have said about the book...</p>
         </div>
   
@@ -495,7 +499,7 @@
   </section>
 
   <!-- get updates / modal trigger -->
-  <section class="bg-light">
+  <section class="bg-white">
     <div class="container">
       <div class="text-center text-danger fw-bold">
         <h2>Stay in The Loop</h2>
@@ -504,7 +508,7 @@
       <div class="row justify-content-center">
         <div class="col-md-8 text-center">
           <p class="text-muted my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero exercitationem voluptatibus porro, hic asperiores fuga illo voluptates obcaecati deleniti veritatis sunt saepe quasi deserunt ex ipsum. Est possimus, aspernatur, vitae eligendi rem odit quaerat, ipsum pariatur ratione maxime delectus fuga minus accusamus dolores iusto maiores accusantium cumque magnam placeat quia!</p>
-          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#reg-modal">
+          <button class="btn btn-altdark" data-bs-toggle="modal" data-bs-target="#reg-modal">
             Register for Updates
           </button>
         </div>
@@ -531,8 +535,48 @@
       </div>
     </div>
   </div>
-  <a href="index.html" class="btn float-end text-white mt-2">Tagasi sisukorda</a>
-  
+   <!-- side panel / offcanvas -->
+   <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title text-danger" id="sidebar-label">My Other Books</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In minima ducimus excepturi quasi tempore fugit quis voluptatibus aut error possimus, tenetur natus magni quam voluptatem quae eligendi repudiandae delectus eaque!</p>
+      <!-- dropdown -->
+      <div class="dropdown mt-3">
+        <button class="btn btn-danger dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown">
+          Choose a book title
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+          <li><a class="dropdown-item" href="#">Rocket Surgery Made Easy</a></li>
+          <li><a class="dropdown-item" href="#">The Practice of Creativity</a></li>
+          <li><a class="dropdown-item" href="#">No me hagas pensar. Actualización</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <a class="btn btn-danger d-block m-2 text-white float-end text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasSisukord" role="button" aria-controls="offcanvasSisukord">
+    Sisukord
+  </a>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasSisukord" aria-labelledby="offcanvasSisukordLabel">
+    <div class="offcanvas-header">
+      <h4 class="offcanvas-title text-danger" id="offcanvasSisukordLabel">Sisukord</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <ul class="list-unstyled text-danger">
+          <li><a class="btn btn-danger m-2" href="course1-3.html">Kursuse 1-3 materjalid</a></li>
+          <li><a class="btn btn-danger m-2" href="course4-6.html">Kursuse 4-6 materjalid</a></li>
+          <li><a class="btn btn-danger m-2" href="course7.html">Kursuse 7 materjalid</a></li>
+          <li><a class="btn btn-danger m-2" href="tabs.html">Tabid</a></li>
+          <li><a class="btn btn-danger active m-2" href="course8.html">Don't Make Me Think - The Book</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--<a href="index.html" class="btn float-end text-white mt-2">Tagasi sisukorda</a> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   <script>
     const tooltips = document.querySelectorAll('.tt')
